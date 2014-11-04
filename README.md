@@ -6,6 +6,7 @@ bash-experience
  * ref: http://go-linux.blogspot.tw/2007/03/basharray.html
 
 * position_parameters.bash: the difference between $@ and $*.
+ * The $@ and $* parameters differ only when between double quotes.
 * exit
  * ref: http://tldp.org/LDP/abs/html/exit-status.html
 
