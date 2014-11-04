@@ -8,4 +8,6 @@ bash-experience
 * exit
  * ref: http://tldp.org/LDP/abs/html/exit-status.html
 
-
+==bash terminology==
+* word splitting: http://mywiki.wooledge.org/WordSplitting
+* path expandsion: ??

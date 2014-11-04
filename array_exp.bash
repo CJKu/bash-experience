@@ -28,3 +28,11 @@ done
 IFS='-'
 echo "\${Numbers[@]} = ${Numbers[@]}"
 echo "\${Numbers[*]} = ${Numbers[*]}"
+
+echo -n "printf \$Numbers[@]:"
+printf "<%s>"  "${Numbers[@]}"
+echo
+
+echo -n "printf \$Numbers[*]:"
+printf "<%s>"  "${Numbers[*]}"
+echo
