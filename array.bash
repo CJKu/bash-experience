@@ -9,19 +9,39 @@ echo -n "The length of element in Numbers = " && echo "${#Numbers[@]}"
 echo -n "The length of element in Numbers = " && echo "${#Numbers[*]}"
 
 # Iterate elements in Numbers
-# ${Numbers[*]} or ${Numbers[@]} are both fine
-echo "Iternate and echo \${Numbers[@]}"
-for i in ${Numbers[@]}
+# Usage of array is the same with position parameter($* and $@)
+index=0
+echo "Iternating \${Numbers[*]}"
+for i in ${Numbers[*]}
 do
-  echo "$i"
+  echo "$((++index)): $i"
 done
 
-# Or use index.
-echo "---"
-# ${!Numbers[*]} or ${!Numbers[@]} are both fine
+index=0
+echo "Iternating \"\${Numbers[*]}\""
+for i in "${Numbers[*]}"
+do
+  echo "$((++index)): $i"
+done
+
+index=0
+echo "Iternating \${Numbers[@]}"
+for i in ${Numbers[@]}
+do
+  echo "$((++index)): $i"
+done
+
+index=0
+echo "Iternating \"\${Numbers[@]}\""
+for i in "${Numbers[@]}"
+do
+  echo "$((++index)): $i"
+done
+
+echo "Iternating Numbers by index"
 for i in ${!Numbers[*]}
 do
-  echo "${Numbers[${i}]}"
+  echo "$(( i + 1)): ${Numbers[${i}]}"
 done
 
 # The difference of @ and *
