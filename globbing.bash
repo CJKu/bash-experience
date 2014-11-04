@@ -10,6 +10,13 @@ for file in ./* ; do         # Use ./* ... NEVER bare *
   fi
 done
 
+# recursive version
+echo
+for file in $(find . -type f -name '*')
+do
+  echo "$file is a file"
+done
+
 Source=(This is a string)
 Dest="This is a string"
 IFS='-'
