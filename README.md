@@ -10,6 +10,12 @@ bash-experience
 * exit
  * ref: http://tldp.org/LDP/abs/html/exit-status.html
 
+==questions==
+* http://tldp.org/LDP/abs/html/string-manipulation.html
+ * if [[ "$len" -lt "$MINLEN" && "$line" =~ [*{\.}]$ ]]
+ * what is =~?
 ==bash terminology==
 * word splitting: http://mywiki.wooledge.org/WordSplitting
 * path expandsion: ??
+* set: http://wiki.bash-hackers.org/commands/builtin/set
+ * "--": If no arguments follow, the positional parameters are unset. With arguments, the positional parameters are set, even if the strings begin with a - (dash) like an option.
