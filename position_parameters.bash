@@ -34,7 +34,7 @@ done
 echo
 echo "Iterating \$@"
 index=0
-for param in "$@"
+for param in $@
 do
   echo "$((++index)): $param"
 done
