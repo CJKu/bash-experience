@@ -14,6 +14,7 @@ bash-experience
 * http://tldp.org/LDP/abs/html/string-manipulation.html
  * if [[ "$len" -lt "$MINLEN" && "$line" =~ [*{\.}]$ ]]
  * what is =~?
+* getopts - command line arguments parser -- need to learn.
 ==bash terminology==
 * word splitting: http://mywiki.wooledge.org/WordSplitting
 * path expandsion: ??
