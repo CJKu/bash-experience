@@ -20,3 +20,4 @@ bash-experience
 * path expandsion: ??
 * set: http://wiki.bash-hackers.org/commands/builtin/set
  * "--": If no arguments follow, the positional parameters are unset. With arguments, the positional parameters are set, even if the strings begin with a - (dash) like an option.
+ * Using set with the -- option explicitly assigns the contents of a variable to the positional parameters. If no variable follows the -- it unsets the positional parameters.
